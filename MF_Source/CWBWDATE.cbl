@@ -69,6 +69,7 @@
 *********  CALCULATE YEARS OF SERVICE BY SUBTRACTING
 *********  EMPLOYEE HIRE DATE FROM CURRENT YEAR.
 *********
+********* adding comments
          1000-CALC-YRS-OF-SERVICE.
 ********* CHANGES START HERE *******************************************
              IF HIRE-YY > RUN-YY                                        11032000
@@ -86,6 +87,7 @@
 *********  DETERMINE IF THE RUN DATE IS THE LAST DAY OF THE
 *********  MONTH.  IF SO, SET THE END OF MONTH INDICATOR ON,
 *********  THEREBY GENERATING THE REGIONAL SALES REPORT
+*********
 *********
          2000-CALC-END-OF-MONTH.
              IF RUN-MM = 02
