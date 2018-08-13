@@ -15,6 +15,8 @@
       *  RUN JCL     - STORED IN THE ECC SLCXCNTL FILE - LAUNCHCX      *
       *                                                                *
       ******************************************************************
+      ***
+      *** Adding
        ENVIRONMENT DIVISION.
        INPUT-OUTPUT SECTION.
        FILE-CONTROL.
