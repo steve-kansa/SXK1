@@ -15,6 +15,7 @@
 *********  DATE-TABLE IS USED TO DETERMINE THE NUMBER OF DAYS
 *********  IN A GIVEN MONTH.
 *********
+********* Adding a comment
        01  DATE-TABLE.
            05  FILLER                 PIC 9(4)    VALUE 0131.
            05  FILLER                 PIC 9(4)    VALUE 0228.
