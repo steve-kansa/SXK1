@@ -87,6 +87,8 @@
 *********  MONTH.  IF SO, SET THE END OF MONTH INDICATOR ON,
 *********  THEREBY GENERATING THE REGIONAL SALES REPORT
 *********
+*********  Adding some more comments
+*********
          2000-CALC-END-OF-MONTH.
              IF RUN-MM = 02
                  PERFORM 3000-CALC-LEAP-YEAR
