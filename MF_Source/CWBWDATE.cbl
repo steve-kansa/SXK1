@@ -8,6 +8,7 @@
       *  FOR XPEDITER/TSO TRAINING SESSIONS                            *
       *                                                                *
       ******************************************************************
+      *** adding line
        ENVIRONMENT DIVISION.
        DATA DIVISION.
        WORKING-STORAGE SECTION.
