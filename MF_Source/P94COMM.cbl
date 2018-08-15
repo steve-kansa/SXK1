@@ -1179,18 +1179,6 @@ KCS305**** COPY VCUSTOMR.
 
            ADD 1 TO WS-COUNTER.
            ADD 1 TO WS-COUNTER.
-           ADD 1 TO WS-COUNTER.
-           ADD 1 TO WS-COUNTER.
-           ADD 1 TO WS-COUNTER.
-           ADD 1 TO WS-COUNTER.
-           ADD 1 TO WS-COUNTER.
-           ADD 1 TO WS-COUNTER.
-           ADD 1 TO WS-COUNTER.
-           ADD 1 TO WS-COUNTER.
-           ADD 1 TO WS-COUNTER.
-           ADD 1 TO WS-COUNTER.
-           ADD 1 TO WS-COUNTER.
-           ADD 1 TO WS-COUNTER.
 
 
            PERFORM  P80000-READ-PARAMETERS
