@@ -1225,6 +1225,15 @@ KCS305**** COPY VCUSTOMR.
            ADD 1 TO WS-COUNTER.
            ADD 1 TO WS-COUNTER.
            ADD 1 TO WS-COUNTER.
+           ADD 1 TO WS-COUNTER.
+           ADD 1 TO WS-COUNTER.
+           ADD 1 TO WS-COUNTER.
+           ADD 1 TO WS-COUNTER.
+           ADD 1 TO WS-COUNTER.
+           ADD 1 TO WS-COUNTER.
+           ADD 1 TO WS-COUNTER.
+
+
 
            IF WMF-CUSTOMR-STATUS = '00'
                PERFORM 9900-CLOSE
