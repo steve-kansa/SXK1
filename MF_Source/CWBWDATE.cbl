@@ -9,6 +9,7 @@
       *                                                                *
       ******************************************************************
       *** adding line
+      *** adding line
        ENVIRONMENT DIVISION.
        DATA DIVISION.
        WORKING-STORAGE SECTION.
