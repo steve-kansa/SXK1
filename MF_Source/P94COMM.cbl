@@ -106,7 +106,7 @@
                88  PARM-ERROR-FOUND                          VALUE 'Y'.
                88  NOT-PARM-ERROR-FOUND                      VALUE 'N'.
 
-           EJECT
+
        01  WS-SYSUT1-STATUS           PIC XX       VALUE '  '.
        01  WS-SALES-STATUS            PIC XX       VALUE '  '.
            88 NOT-FOUND                           VALUE '23'.
@@ -493,7 +493,7 @@ PWB305     05  WS-CDT-DATE-R           PIC X(08).
 PWB305     05  WS-CDT-TIME-R           PIC X(08).
 PWB305     05  FILLER                  PIC X(01).
 PWB305     05  FILLER                  PIC X(04).
-           EJECT
+
            COPY SALESCMP.
 
       *****************************************************************
@@ -509,7 +509,7 @@ PWB305     05  FILLER                  PIC X(04).
        01  PDAS03-PARMS.
            03  PDAS03-AGE-DAYS         PIC 9(5)    VALUE ZEROES.
            03  PDAS03-MESSAGE          PIC X(15)   VALUE SPACES.
-           EJECT
+
 
       *****************************************************************
       *    PARAMETER RECORD LAYOUTS                                   *
@@ -554,10 +554,10 @@ PWB305     05  FILLER                  PIC X(04).
       *****************************************************************
 
 KCS305**** COPY VPENDORD.
-           EJECT
+
 
 KCS305**** COPY VCUSTOMR.
-           EJECT
+
 
 
       *****************************************************************
@@ -596,7 +596,7 @@ KCS305**** COPY VCUSTOMR.
        01  ORDER-ITEM-SSA-UNQUAL.
            03  FILLER                  PIC X(8)  VALUE 'ORDITEM'.
            03  FILLER                  PIC X     VALUE SPACES.
-           EJECT
+
 
       *****************************************************************
       *    IMS SEGMENT I/O AREAS                                      *
@@ -606,7 +606,7 @@ KCS305**** COPY VCUSTOMR.
 
 
            COPY IORDITEM.
-           EJECT
+
 
       *****************************************************************
       *    DB2  DEFINITIONS                                           *
@@ -617,36 +617,36 @@ KCS305**** COPY VCUSTOMR.
       *****************************************************************
 
 
-           EJECT
+
       *****************************************************************
       *         USER IDENTIFICATION TABLE        -- DCLGEN DUSERID    *
       *****************************************************************
 
-           EJECT
+
 
       *****************************************************************
       *         ITEM TABLE                       -- DCLGEN DITEM      *
       *****************************************************************
 
-           EJECT
+
 
       *****************************************************************
       *         SUPPLIER TABLE                   -- DCLGEN DSUPPLR    *
       *****************************************************************
 
-           EJECT
+
 
       *****************************************************************
       *         PURCHASE TYPE TABLE              -- DCLGEN DPURTYP    *
       *****************************************************************
 
-           EJECT
+
 
       *****************************************************************
       *         ITEM SUPPLIER TABLE              -- DCLGEN DITMSUP    *
       *****************************************************************
 
-           EJECT
+
 
       *****************************************************************
       *         DB2 CURSORS                                           *
@@ -655,7 +655,7 @@ KCS305**** COPY VCUSTOMR.
       *****************************************************************
       *         ITEM TABLE CURSOR                                     *
       *****************************************************************
-           EJECT
+
 
       *****************************************************************
       *         DB2 STORED PROCEDURE PARAMETER / WORK AREAS           *
@@ -958,14 +958,14 @@ KCS305**** COPY VCUSTOMR.
                10 WPM-RETURN-CODE      PIC X(10)   VALUE SPACES.
                10 FILLER               PIC X(15)   VALUE SPACES.
 
-           EJECT
+
 
       *****************************************************************
       *    PDA STANDARD CATEGORY / SUB-CATEGORY FOR THE APPLICATION   *
       *****************************************************************
 
            COPY PDACATGY.
-           EJECT
+
 
       *****************************************************************
       *    PROGRAM INTERNAL USE ARRAYS CATEGORY, SUB-CATEGORY         *
@@ -981,7 +981,7 @@ KCS305**** COPY VCUSTOMR.
                10  WPCA-CATEGORY       PIC X(32).
                10  WPCA-SUB-CATEGORY   PIC X(32).
 
-           EJECT
+
 
       *****************************************************************
       *    D E M O N S T R A T I O N    P U R P O S E S   O N L Y     *
@@ -997,7 +997,7 @@ KCS305**** COPY VCUSTOMR.
                                          WSCA-SUB-CATEGORY-COUNT
                                            INDEXED BY WSCA-SUBCAT-IX.
                10  WSCA-SUB-CATEGORY   PIC X(32).
-           EJECT
+
 
       *****************************************************************
       *         DB2 TABLE ITEM STATUS CODES FROM VENDOR               *
@@ -1067,7 +1067,7 @@ KCS305**** COPY VCUSTOMR.
        01  RECORD-DATA        PIC X(80).
        01  SALES-RECORD       PIC X(60).
 
-           EJECT
+
 
       *****************************************************************
       *    P R O C E D U R E    D I V I S I O N                       *
@@ -1114,7 +1114,7 @@ KCS305**** COPY VCUSTOMR.
 
        P00000-MAINLINE-EXIT.
            EXIT.
-           EJECT
+
 
       *****************************************************************
       *                                                               *
@@ -1195,7 +1195,7 @@ KCS305**** COPY VCUSTOMR.
 
        P00050-INITIALIZE-EXIT.
            EXIT.
-           EJECT
+
 
       *****************************************************************
       *                                                               *
@@ -1254,7 +1254,7 @@ KCS305**** COPY VCUSTOMR.
 
        P00100-END-OF-JOB-EXIT.
            EXIT.
-           EJECT
+
 
       *****************************************************************
       *                                                               *
@@ -1309,7 +1309,7 @@ KCS305**** COPY VCUSTOMR.
            SUBTRACT 1 FROM WS-COUNTER.
            SUBTRACT 1 FROM WS-COUNTER.
            EXIT.
-           EJECT
+
 
       *****************************************************************
       *                                                               *
@@ -1396,7 +1396,7 @@ KCS305**** COPY VCUSTOMR.
            SUBTRACT 1 FROM WS-COUNTER.
            SUBTRACT 1 FROM WS-COUNTER.
            EXIT.
-           EJECT
+
 
       *****************************************************************
       *                                                               *
@@ -1468,7 +1468,7 @@ KCS305**** COPY VCUSTOMR.
            SUBTRACT 1 FROM WS-COUNTER.
            SUBTRACT 1 FROM WS-COUNTER.
            EXIT.
-           EJECT
+
 
       *****************************************************************
       *                                                               *
@@ -1595,7 +1595,6 @@ KCS305**** COPY VCUSTOMR.
            SUBTRACT 1 FROM WS-COUNTER.
            SUBTRACT 1 FROM WS-COUNTER.
            EXIT.
-           EJECT
 
       *****************************************************************
       *                                                               *
@@ -1629,7 +1628,7 @@ KCS305**** COPY VCUSTOMR.
 
        P00700-PARM-ERROR-EXIT.
            EXIT.
-           EJECT
+
 
       *****************************************************************
       *                                                               *
@@ -1696,7 +1695,7 @@ KCS305**** COPY VCUSTOMR.
            SUBTRACT 1 FROM WS-COUNTER.
            SUBTRACT 1 FROM WS-COUNTER.
            EXIT.
-           EJECT
+
 
       *****************************************************************
       *                                                               *
@@ -1756,11 +1755,11 @@ KCS305**** COPY VCUSTOMR.
            SUBTRACT 1 FROM WS-COUNTER.
            SUBTRACT 1 FROM WS-COUNTER.
            EXIT.
-           EJECT
 
 
 
-           EJECT
+
+
 
 
 
@@ -1808,7 +1807,6 @@ KCS305**** COPY VCUSTOMR.
            SUBTRACT 1 FROM WS-COUNTER.
            SUBTRACT 1 FROM WS-COUNTER.
            EXIT.
-           EJECT
 
 
 
@@ -1822,7 +1820,7 @@ KCS305**** COPY VCUSTOMR.
       *                                                               *
       *****************************************************************
 
-KCS305
+
 KCS305*****************************************************************
 KCS305*                                                               *
 KCS305*    PARAGRAPH:  P99400-ERROR-ROUTINE                           *
@@ -1837,18 +1835,18 @@ KCS305*                                                               *
 KCS305*    CALLED BY:  GLOBAL                                         *
 KCS305*                                                               *
 KCS305*****************************************************************
-KCS305
+
 KCS305 P99400-ERROR-ROUTINE.
-KCS305
+
 KCS305     MOVE 'Y'                    TO WS-ERROR-FOUND-SW.
-KCS305
-KCS305
+
+
 KCS305     MOVE WMF-MESSAGE-AREA       TO WPEA-ERROR-07-TEXT.
-KCS305
-KCS305
+
+
 KCS305 P99400-ERROR-ROUTINE-EXIT.
 KCS305     EXIT.
-KCS305     EJECT
+
 
       *****************************************************************
       *                                                               *
@@ -1908,7 +1906,7 @@ KCS305     EJECT
 
        P99500-PDA-ERROR-EXIT.
            EXIT.
-           EJECT
+
       *****************************************************************
       *                                                               *
       *    PARAGRAPH:  P99999-ERROR                                   *
@@ -1920,19 +1918,19 @@ KCS305     EJECT
       *****************************************************************
 
 RTN    P99999-ERROR.
-NOT
+
 USED       MOVE 'GEN'                  TO WS-PDA-ERROR-TYPE.
 AS OF      MOVE 'PDAB06'               TO WPGE-PROGRAM-ID.
 JAN        MOVE 99                     TO WS-RETURN-CODE.
 2001       MOVE 'ERROR'                TO WPGE-DESCRIPTION.
            MOVE 'P99999'               TO WPGE-PARAGRAPH.
-LLR
+
            PERFORM  P99500-PDA-ERROR
                THRU P99500-PDA-ERROR-EXIT.
 
        P99999-ERROR-EXIT.
            EXIT.
-           EJECT
+
 *********
 *********
        9000-OPEN.
