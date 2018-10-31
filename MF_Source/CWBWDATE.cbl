@@ -64,8 +64,9 @@
                                 RUN-DATE,
                                 HIRE-DATE.
        0000-MAINLINE.
-           PERFORM 4000-COUNTER.
-           IF CHECKED-FOR-EOM
+PFHSXK     PERFORM 4000-COUNTER.
+PFHSXK
+PFHSXK     IF CHECKED-FOR-EOM
                PERFORM 1000-CALC-YRS-OF-SERVICE
            ELSE
                PERFORM 2000-CALC-END-OF-MONTH
