@@ -18,6 +18,7 @@
       ***
       *** Adding
       *** ANOTHER CHANGE
+      *** ANOTHER CHANGE
        ENVIRONMENT DIVISION.
        INPUT-OUTPUT SECTION.
        FILE-CONTROL.
