@@ -8,10 +8,7 @@
       *  FOR XPEDITER/TSO TRAINING SESSIONS                            *
       *                                                                *
       ******************************************************************
-      *** adding line
-      *** adding line
-      **** new new line
-      ***UPS
+
        ENVIRONMENT DIVISION.
        DATA DIVISION.
        WORKING-STORAGE SECTION.
