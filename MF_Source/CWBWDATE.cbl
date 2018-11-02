@@ -13,8 +13,6 @@
        DATA DIVISION.
        WORKING-STORAGE SECTION.
 *********
-*********1
-*********2
 *********  DATE-TABLE IS USED TO DETERMINE THE NUMBER OF DAYS
 *********  IN A GIVEN MONTH.
 *********
