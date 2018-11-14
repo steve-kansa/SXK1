@@ -21,7 +21,8 @@
 002100*  ********  **********  *******
 002200*  96/01/24  ISPW        NEW PROGRAM
 002300* ======================================================
-002400 ENVIRONMENT DIVISION.
+002310* ======================================================
+002310 002400 ENVIRONMENT DIVISION.
 002500 CONFIGURATION SECTION.
 002600 SOURCE-COMPUTER. IBM-370.
 002700 OBJECT-COMPUTER. IBM-370.
